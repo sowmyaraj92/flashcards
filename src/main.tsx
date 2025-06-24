@@ -3,9 +3,10 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.tsx";
 import "./index.css";
-import StudyPage from "./pages/StudyPage.tsx";
+import CategorySelectionPage from "./pages/CategorySelectionPage.tsx";
 import QuizPage from "./pages/QuizPage.tsx";
 import StatsPage from "./pages/StatsPage.tsx";
+import FlashcardPage from "./pages/FlashcardPage.tsx";
 
 const router = createBrowserRouter([
   {
@@ -14,7 +15,11 @@ const router = createBrowserRouter([
   },
   {
     path: "study",
-    element: <StudyPage />,
+    element: <CategorySelectionPage />,
+  },
+  {
+    path: "study/:category",
+    element: <FlashcardPage />,
   },
   {
     path: "quiz",

@@ -58,3 +58,28 @@ button {
 .stats-button:hover {
   background-color: #c82333;
 }
+
+.category-button {
+  background-color: #6c757d;
+  width: 100%;
+}
+
+.category-button:hover {
+  background-color: #5a6268;
+}
+
+.next-button {
+  background-color: #007bff; /* Blue */
+}
+
+.next-button:hover {
+  background-color: #0056b3;
+}
+
+.back-button {
+  background-color: #6c757d; /* Grey */
+}
+
+.back-button:hover {
+  background-color: #5a6268;
+}
