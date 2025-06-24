@@ -9,14 +9,14 @@ function CategorySelectionPage() {
       <h1>Select a Category</h1>
       <div className="card">
         {categories.map((category) => (
-          <Link key={category} to={`/study/${category}`}>
-            <button className="category-button">{category}</button>
+          <Link key={category} to={`/study/${category}`} className="button category-button">
+            {category}
           </Link>
         ))}
       </div>
-      <div style={{ marginTop: '1rem' }}>
-        <Link to="/">
-            <button className="back-button">Back to Home</button>
+      <div style={{ marginTop: "1rem" }}>
+        <Link to="/" className="button back-button">
+          Back to Home
         </Link>
       </div>
     </div>

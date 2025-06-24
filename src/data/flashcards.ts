@@ -1,4 +1,6 @@
-export const flashcards = [
+import type { Flashcard } from "../types";
+
+export const flashcards: Flashcard[] = [
   // Animals
   {
     category: "animals",

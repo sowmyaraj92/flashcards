@@ -1,0 +1,9 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Testing
+
+- Once you're done making changes to the codebase, run all the testsnd ensure they pass. 
+- Once you're done making changes, proactively ask the user if you should also write new test to cover a new functionality.

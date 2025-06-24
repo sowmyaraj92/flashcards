@@ -25,7 +25,8 @@ h1 {
   margin-top: 2rem;
 }
 
-button {
+.button {
+  display: inline-block;
   padding: 1rem 2rem;
   font-size: 1.2rem;
   cursor: pointer;
@@ -33,6 +34,8 @@ button {
   border-radius: 8px;
   color: white;
   transition: background-color 0.2s;
+  text-decoration: none;
+  text-align: center;
 }
 
 .study-button {
@@ -82,4 +85,17 @@ button {
 
 .back-button:hover {
   background-color: #5a6268;
+}
+
+.flashcard-page-card-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.flashcard-page-nav-buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
 }

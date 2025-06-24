@@ -4,12 +4,12 @@ test('study flow', async ({ page }) => {
   await page.goto('/');
 
   // 1. Navigate to the study mode
-  await page.getByRole('button', { name: 'Study Mode' }).click();
+  await page.getByRole('link', { name: 'Study Mode' }).click();
   await expect(page).toHaveURL('/study');
   await expect(page.getByRole('heading', { name: 'Select a Category' })).toBeVisible();
 
   // 2. Select a category
-  await page.getByRole('button', { name: 'animals' }).click();
+  await page.getByRole('link', { name: 'animals' }).click();
   await expect(page).toHaveURL('/study/animals');
   await expect(page.getByRole('heading', { name: 'Studying: animals' })).toBeVisible();
 
@@ -35,10 +35,10 @@ test('study flow', async ({ page }) => {
   await expect(secondFlashcard.locator('.flashcard-back')).toContainText('a dog');
 
   // 5. Go back to categories
-  await page.getByRole('button', { name: 'Back to Categories' }).click();
+  await page.getByRole('link', { name: 'Back to Categories' }).click();
   await expect(page).toHaveURL('/study');
 
   // 6. Go back to home
-  await page.getByRole('button', { name: 'Back to Home' }).click();
+  await page.getByRole('link', { name: 'Back to Home' }).click();
   await expect(page).toHaveURL('/');
 }); 
